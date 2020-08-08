@@ -1,0 +1,7 @@
+for local storage sessions
+
+https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html#local-storage
+
+TOKEN: 
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjJkMDIxNjZkZGE0NjRiYjQ3M2UwYmUiLCJpYXQiOjE1OTY3ODYxNTB9.9DK_2feLSzZjTPyqMgxCbvygbZSgIikwzM2M2fxGFbk
