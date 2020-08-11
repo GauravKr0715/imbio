@@ -15,11 +15,11 @@ Router.post("/", async (req, res) => {
   if (error) return res.status(400).json({ message: error.details[0].message });
 
   const user = await User.findOne({ email: req.body.email });
-  if (!user) return res.status(400).json({ message: "Email doesn't exist.." });
+  if (!user) return res.status(401).json({ message: "Email doesn't exist.." });
 
   const passCheck = await bcrypt.compare(req.body.password, user.password);
   if (!passCheck)
-    return res.status(400).json({ message: "Password is Invalid" });
+    return res.status(401).json({ message: "Password is Invalid" });
 
   const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
   res
